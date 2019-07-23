@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      name: application #需要从github上读取的资源名称，注意没myl后缀名
+      profile: dev #本次访问的配置项
+      label: master
+      uri: http://config-7098.com:7098  #本微服务启动后先找7098号服务，通过springCloudConfig获得GitHub的服务地址
